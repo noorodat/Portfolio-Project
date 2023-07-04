@@ -651,8 +651,8 @@ nav .mobile-button i {
 .references .reference-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
+    align-items: flex-start;
 }
 
 .references .reference-info .info {
