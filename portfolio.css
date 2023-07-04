@@ -6,9 +6,10 @@
     --text-color: #FFFFFF;
     --sec-text-color: #F9F49E;
     --heading-font-size: 30px;
-    --main-margin-top: 70px;
     --transition-duration: 0.3s;
     --text-font-size: 20px;
+    --section-margin-top: 150px;
+    --content-margin-top: 75px;
 }
 
 * {
@@ -42,7 +43,7 @@ ul {
 }
 
 .section {
-    margin-top: 200px;
+    margin-top: var(--section-margin-top);
 }
 
 .section-heading {  
@@ -52,7 +53,7 @@ ul {
 }
 
 .section-info {
-    margin-top: 100px;
+    margin-top: var(--content-margin-top);
 }
 
 .color-yellow {
@@ -105,7 +106,7 @@ nav .mobile-button {
 
 .portfolio-content {
     background-color: var(--main-color);
-    margin-top: var(--main-margin-top);
+    margin-top: var(--content-margin-top);
     padding: 20px 120px;
 }
 
@@ -271,7 +272,7 @@ nav .mobile-button {
 .skills .skills-types {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: var(--content-margin-top);
 }
 
 .skills .skills-types .skill {
@@ -366,6 +367,7 @@ nav .mobile-button {
     grid-template-columns: repeat(3, 300px);
     justify-content: space-between;
     gap: 40px;
+    margin-top: var(--content-margin-top);
 }
 
 
@@ -452,7 +454,7 @@ nav .mobile-button {
 /* Start languages */
 
 .languages .languages-container {
-    margin-top: 100px;
+    margin-top: var(--content-margin-top);
     display: flex;
     justify-content: space-evenly;
 }
@@ -487,7 +489,7 @@ nav .mobile-button {
 /* Start courses */
 
 .courses .courses-boxes {
-    margin-top: 100px;
+    margin-top: var(--content-margin-top);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -559,7 +561,7 @@ nav .mobile-button {
 /* Start references */
 
 .references .references-content {
-    margin-top: 100px;
+    margin-top: var(--content-margin-top);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,7 +635,7 @@ nav .mobile-button {
 /* Start footer */
 
 .portfolio-content footer {
-    margin-top: 100px;
+    margin-top: var(--section-margin-top);
     border-top: 5px solid var(--sec-text-color);
 }
 
@@ -690,9 +692,108 @@ nav .mobile-button {
     }
 }
 
-/* Start Phone + Tablet */
 
-@media (max-width: 768px) {
+/* Start laptop */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .portfolio-content {
+        padding: 8px 20px;
+    }
+        /* Sart nav */
+
+    .portfolio-content {
+        padding: 8px 10px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav .logo {
+        font-size: 35px;
+    }
+
+    nav .links {
+        font-size: 17px;
+    }
+
+    .mobile-links {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px;
+        position: absolute;
+        left: -122px;
+        top: 20px;
+        text-align: left;
+    }
+
+    nav .mobile-button:hover .mobile-links {
+        display: flex;
+        background-color: var(--main-color);
+    }
+
+    .mobile-links li {
+        background-color: var(--sec-color);
+        padding: 10px;
+    }
+    /* end nav */
+
+    /* Start my info */
+
+    .portfolio-content .my-info {
+        gap: 40px;
+    }
+
+    .portfolio-content .my-info h1 {
+        font-size: 42px;
+    }
+
+    .portfolio-content .my-info p {
+        font-size: 20px;
+    }
+
+    .portfolio-content .my-info .socials {
+        font-size: 28px;
+    }
+
+    .portfolio-content .my-info #pfp-image #pfp {
+        width: 250px;
+    }
+
+    .portfolio-content #pfp-image::before {
+        display: none;
+    }
+    /* End my info */
+
+    /* Start skills */
+
+    .skills .skills-types .skill {
+        width: 350px;
+    }
+
+    /* End skills */
+
+    /* Start projects */
+
+    .projects .projects-cards {
+        grid-template-columns: 300px 300px;
+        padding: 25px;
+        justify-content: center;
+    }
+
+    .projects .project-card .image {
+        overflow: hidden;
+    }
+
+    /* End projects */
+}
+
+
+
+/* Start tablet */
+
+@media (min-width: 481px) and (max-width: 767px) {
     /* Sart nav */
 
     .portfolio-content {
@@ -817,12 +918,18 @@ nav .mobile-button {
 
     /* End courses */
 
+    /* Start footer */
+
+    .portfolio-content footer .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* End footer */
+
 }
 
-/* End Phone + Tablet */
-
-
-
+/* End tablet */
 
 
 
@@ -830,24 +937,60 @@ nav .mobile-button {
 
 @media (max-width: 480px) {
 
+        /* Sart nav */
+
+        .portfolio-content {
+            padding: 8px 10px;
+        }
+    
+        nav {
+            padding: 15px;
+        }
+        nav .links {
+            display: none;
+        }
+    
+        nav .mobile-button {
+            display: block;
+            position: relative;
+        }
+    
+        .mobile-links {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            padding: 15px;
+            position: absolute;
+            left: -122px;
+            top: 20px;
+            text-align: left;
+        }
+    
+        nav .mobile-button:hover .mobile-links {
+            display: flex;
+            background-color: var(--main-color);
+        }
+    
+        .mobile-links li {
+            background-color: var(--sec-color);
+            padding: 10px;
+        }
+        /* end nav */
+
     /* Start my info */
 
-    .portfolio-content .my-info #pfp-image #pfp {
-        width: 200px;
+    .portfolio-content .my-info {
+        flex-direction: column;
+        gap: 40px;
     }
 
     .portfolio-content .my-info h1 {
         font-size: 35px;
     }
 
-    .portfolio-content .my-info p {
-        font-size: 20px;
+    .portfolio-content .my-info #pfp-image #pfp {
+        width: 250px;
     }
-
-    .portfolio-content .my-info i {
-        font-size: 30px;
-    }
-
     /* End my info */
 
     /* Start education*/
