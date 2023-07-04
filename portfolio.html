@@ -17,13 +17,9 @@
 </head>
 
 
-
 <body>
 
-
-
-
-    <nav class="main-padding">
+    <nav>
         <div class="logo"><a href="">Nooraldeen</a></div>
         <ul class="links">
             <li><a href="#home">Home</a></li>
@@ -33,11 +29,24 @@
             <li><a href="#courses">Courses</a></li>
             <li><a href="#references">Reference</a></li>
         </ul>
+        <div class="mobile-button">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="mobile-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#references">Reference</a></li>
+            </ul>
+        </div>
     </nav>
+
+
 
     <div class="portfolio-content main-padding">
 
-        <div class="my-info">
+        <div class="my-info" id="home">
             <div id="pfp-image">
                 <img src="./images/pfp.png" alt="" id="pfp">
             </div>
@@ -60,16 +69,16 @@
                     <p class="title">Computer science at <a href="https://www.just.edu.jo/Pages/Default.aspx" target="_blank">Jordan University of Science and Technology</a></p>
                     <p>Computer Science major studies computer systems, programming, algorithms, and problem-solving. It includes areas like data structures, software development, and artificial intelligence. Graduates pursue careers in software engineering, data analysis, and cybersecurity. It's a dynamic field with ample opportunities for innovation.</p>
                     <span>2021 - Present</span>
-                    <img src="images/JUST logo.png" alt="" id="just-logo">              
+                    <img src="images/JUST logo.png" alt="JUST logo" id="just-logo">              
                 </div>
                 <div class="edu-text">
                     <p class="title">Full stack web development Trainee at <a href="https://yo.orange.jo/orange-coding-academy" target="_blank"> Orange Coding Academy</a></p>
                     <p><span>Frontend</span>: HTML, CSS, Bootstrap, Javascript and ReactJS <br> <br>
                         <span>backend</span>: SQL, PHP Laravel. <br><br>
                         
-                        in addition to 10 projects with masterpiece and around 300 tasks in 5 months</p>
+                        In addition to 10 projects with masterpiece and around 300 tasks in 5 months</p>
                     <span>2023 - Present</span>
-                    <img src="images/orange logo.png" alt="" id="just-logo">              
+                    <img src="images/orange logo.png" alt="orange logo" id="just-logo">              
                 </div>
             </div>
         </div>
@@ -90,11 +99,11 @@
                 <div id="tech-skills" class="skill">
                     <h3><span>Technical </span>Skills</h3>
                     <ul class="skills-list">
-                        <li id="html"><img src="images/HTML.png" alt="">HTML5</li>
-                        <li id="css"><img src="images/css logo.png" alt="">CSS</li>
-                        <li id="javascript"><img src="images/Javascript logo2.png" alt="">Javascript</li>
-                        <li id="cplusplus"><img src="images/C++ logo.png" alt="">C++</li>
-                        <li id="sql"><img src="images/SQL_logo-removebg-preview.png" alt="">SQL</li>
+                        <li id="html"><img src="images/HTML.png" alt="html">HTML5</li>
+                        <li id="css"><img src="images/css logo.png" alt="css">CSS</li>
+                        <li id="javascript"><img src="images/Javascript logo2.png" alt="javascript">Javascript</li>
+                        <li id="cplusplus"><img src="images/C++ logo.png" alt="c++">C++</li>
+                        <li id="sql"><img src="images/SQL_logo-removebg-preview.png" alt="sql">SQL</li>
                     </ul>
                 </div>
             </div>
@@ -105,7 +114,7 @@
             <div class="projects-cards">
                     <div class="project-card">
                             <div class="image">
-                                <img src="/images/miro.jpg" alt="">
+                                <img src="/images/miro.jpg" alt="miro logo">
                             </div>
                             <div class="project-info">
                                 <h3 class="color-yellow">Gift shop</h3>
@@ -117,7 +126,7 @@
                 
                     <div class="project-card">
                         <div class="image">
-                            <img src="/images/gaming background (2).jpg" alt="">
+                            <img src="/images/gaming background (2).jpg" alt="gaming website pic">
                         </div>
                         <div class="project-info">
                             <h3 class="color-yellow">Gaming website template</h3>
@@ -129,7 +138,7 @@
 
                     <div class="project-card">
                         <div class="image">
-                            <img src="/images/weather app.PNG" alt="">
+                            <img src="/images/weather app.PNG" alt="app pic">
                         </div>
                         <div class="project-info">
                             <h3 class="color-yellow">Weather App</h3>
@@ -140,7 +149,7 @@
 
                 <div class="project-card">
                     <div class="image bondi">
-                        <img src="/images/Bondi logo.png" alt="">
+                        <img src="/images/Bondi logo.png" alt="bondi logo">
                     </div>
                     <div class="project-info">
                         <h3 class="color-yellow">Website template</h3>
@@ -151,7 +160,7 @@
                 </div>
                 <div class="project-card">
                     <div class="image">
-                        <img src="/images/mountain.jpg" alt="">
+                        <img src="/images/mountain.jpg" alt="mountain">
                     </div>
                     <div class="project-info">
                         <h3 class="color-yellow">Website template</h3>
@@ -161,7 +170,7 @@
                 </div>
                 <div class="project-card">
                     <div class="image">
-                        <img src="/images/github repo.jpg" alt="">
+                        <img src="/images/github repo.jpg" alt="github pic">
                     </div>
                     <div class="project-info">
                         <h3 class="color-yellow">Github repositories finder</h3>
@@ -199,7 +208,7 @@
             <div class="courses-boxes">
                 <div class="course-box">
                     <div class="image">
-                        <img src="images/english course.png" alt="">
+                        <img src="images/english course.png" alt="english certificate">
                     </div>
                     <p class="description">The "<span>English for Career Development</span>" course helps individuals improve their English language skills for professional settings. It covers writing emails, resumes, and cover letters, as well as job interviews and presentations. The course aims to enhance communication skills and provide practical knowledge for success in the workplace.</p>
                 </div>
@@ -212,14 +221,61 @@
             </div>
         </div>
 
-        <div class="references section">
+        <div class="references section" id="references">
             <h2 class="section-heading">References</h2>
             <div class="references-content">
                 <div class="reference">
-                    
+                    <div class="hala-image">
+                        <img src="images/coach hala-modified.png" alt="coach hala">
+                    </div>
+                    <div class="reference-info">
+                        <div class="name info">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Hala Hamdan</span>
+                        </div>
+                        <div class="email info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><a href="mailto:gt.halla.hamdan@orange.com">Email</a></span>
+                        </div>
+                        <div class="linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span><a href="https://www.linkedin.com/in/hala-hamdan-927941163/" target="_blank">Hala Hamdan</a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
+
+        <footer>
+            <div class="info">
+                <div class="contact">
+                    <h2>Get in touch</h2>
+                    <div class="contact-info">
+                        <i class="fa-solid fa-envelope"></i> <span>Nooraldeen.aloudat@gmail.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fa-solid fa-envelope"></i> <span>Noor.feraas@gmail.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fa-solid fa-phone"></i> <span>+962776795866</span>
+                    </div>
+                    <div class="socials">
+
+                    </div>
+                </div>
+                <div class="socials">
+                    <h2>Socials</h2>
+                    <div class="discord"><i class="fa-brands fa-discord"></i><span>Nour#1848</span></div>
+                    <a href="https://www.instagram.com/noorodat9/" target="_blank"><i class="fa-brands fa-instagram"></i><span>noorodat9</span></a>
+                    <a href="https://www.linkedin.com/in/nooraldeen-aloudat-979008147/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Nooraldeen Aloudat</span></a>
+                    <a href="https://github.com/noorodat" target="_blank"><i class="fa-brands fa-github"></i><span>noorodat</span></a>
+                </div>
+            </div>
+            <div class="copyrights">
+                <p>&copy; All rights reserved | Nooraldeen</p>
+            </div>
+        </footer>
 
     </div>
 
