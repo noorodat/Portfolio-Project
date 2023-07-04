@@ -651,7 +651,7 @@ nav .mobile-button i {
 .references .reference-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -1155,7 +1155,6 @@ nav .mobile-button i {
 }
 
 /* End Phone */
-
 
 
 /* Phone to laptop */
