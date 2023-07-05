@@ -137,7 +137,6 @@ nav .mobile-button i {
 .portfolio-content #pfp-image #pfp {
     position: relative;
     width: 350px;
-    margin-left: 10px;
     animation: up-down 1s alternate infinite;
 }
 
@@ -234,6 +233,7 @@ nav .mobile-button i {
     padding: 20px;
     border-radius: 10px;
     width: 40%;
+    justify-content: space-between;
 }
 
 .portfolio-content #education .edu-text .title {
@@ -352,15 +352,15 @@ nav .mobile-button i {
     animation-delay: 0.2s;
 }
 
-.skills .skills-list #javascript {
+#skills .skills-list #javascript {
     animation-delay: 0.4s;
 }
 
-.skills .skills-list #cplusplus {
+#skills .skills-list #cplusplus {
     animation-delay: 0.6s;
 }
 
-.skills .skills-list #sql {
+#skills .skills-list #sql {
     animation-delay: 0.8s;
 }
 
@@ -390,6 +390,12 @@ nav .mobile-button i {
 
 #projects .project-card .project-info {
     padding: 15px;
+}
+
+#projects .project-card .project-info .date {
+    display: inline-block;
+    margin-top: 15px;
+    border-bottom: 1px solid var(--sec-text-color);
 }
 
 #projects .project-card .go-link {
@@ -621,7 +627,7 @@ nav .mobile-button i {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--sec-text-color);
+    background-color: #f9f49e6d;;
     transition: var(--transition-duration);
     opacity: 0;
     display: flex;
@@ -670,7 +676,6 @@ nav .mobile-button i {
     text-decoration: underline;
 }
 
-
 /* End references */
 
 
@@ -679,6 +684,7 @@ nav .mobile-button i {
 .portfolio-content footer {
     margin-top: var(--section-margin-top);
     border-top: 5px solid var(--sec-text-color);
+    font-size: 18px;
 }
 
 .portfolio-content footer .info {
@@ -712,6 +718,7 @@ nav .mobile-button i {
 .portfolio-content footer .copyrights {
     padding: 20px;
     text-align: center;
+    margin-top: 40px;
 }
 
 /* End footer */
@@ -816,7 +823,7 @@ nav .mobile-button i {
 
     /* Start skills */
 
-    .skills .skills-types .skill {
+    #skills .skills-types .skill {
         width: 350px;
     }
 
@@ -824,13 +831,13 @@ nav .mobile-button i {
 
     /* Start projects */
 
-    .projects .projects-cards {
+    #projects .projects-cards {
         grid-template-columns: 300px 300px;
         padding: 25px;
         justify-content: center;
     }
 
-    .projects .project-card .image {
+    #projects .project-card .image {
         overflow: hidden;
     }
 
@@ -838,7 +845,7 @@ nav .mobile-button i {
 
     /* Start languages */
 
-    .languages .languages-container .language {
+    #languages .languages-container .language {
         width: 35%;
     }
 
@@ -896,7 +903,6 @@ nav .mobile-button i {
     /* Start my info */
 
     .portfolio-content .my-info {
-        flex-direction: column;
         gap: 40px;
     }
 
@@ -910,24 +916,24 @@ nav .mobile-button i {
     /* End my info */
 
     /* Start education */
-    .education .education-info {
+    #education .education-info {
         flex-direction: column;
         text-align: center;
     }
 
-    .education .education-info .edu-text {
+    #education .education-info .edu-text {
         width: 100%;
     }
     /* End education */
 
     /* Start skills */
 
-    .skills .skills-types {
+    #skills .skills-types {
         gap: 30px;
         flex-direction: column;
     }
 
-    .skills .skills-types .skill {     
+    #skills .skills-types .skill {     
         box-shadow: -2px 5px 10px 2px rgba(249,244,158,0.76);
         width: 70%;
         margin: auto;
@@ -937,13 +943,13 @@ nav .mobile-button i {
 
     /* Start projects */
 
-    .projects .projects-cards {
+    #projects .projects-cards {
         grid-template-columns: 350px;
         padding: 25px;
         justify-content: center;
     }
 
-    .projects .project-card .image {
+    #projects .project-card .image {
         overflow: hidden;
     }
 
@@ -951,11 +957,11 @@ nav .mobile-button i {
 
     /* Start languages */
 
-    .languages .languages-container {
+    #languages .languages-container {
         gap: 20px;
     }
 
-    .languages .languages-container .language {
+    #languages .languages-container .language {
         box-shadow: -2px 5px 10px 2px rgba(249,244,158,0.76);
     }
 
@@ -1038,6 +1044,12 @@ nav .mobile-button i {
     .portfolio-content .my-info {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-content .my-info .socials {
+        justify-content: center;
     }
 
     .portfolio-content .my-info h1 {
@@ -1051,11 +1063,11 @@ nav .mobile-button i {
 
     /* Start education*/
 
-    .education .education-info {
+    #education .education-info {
         flex-direction: column;
     }
 
-    .education .education-info .edu-text {
+    #education .education-info .edu-text {
         width: 100%;
     }
 
@@ -1063,12 +1075,12 @@ nav .mobile-button i {
 
     /* Start skills */
 
-    .skills .skills-types {
+    #skills .skills-types {
         flex-direction: column;
         gap: 20px;
     }
 
-    .skills .skills-types .skill {
+    #skills .skills-types .skill {
         width: 100%;
         box-shadow: -2px 5px 10px 2px rgba(249,244,158,0.76);
     }
@@ -1078,12 +1090,12 @@ nav .mobile-button i {
 
     /* Start projects */
 
-    .projects .projects-cards {
+    #projects .projects-cards {
         grid-template-columns: auto;
         padding: 25px;
     }
 
-    .projects .project-card .image {
+    #projects .project-card .image {
         overflow: hidden;
         height: fit-content;
     }
@@ -1092,12 +1104,12 @@ nav .mobile-button i {
 
     /* Start languages */
 
-    .languages .languages-container {
+    #languages .languages-container {
         flex-direction: column;
         gap: 20px;
     }
 
-    .languages .languages-container .language {
+    #languages .languages-container .language {
         width: 100%;
         box-shadow: -2px 5px 10px 2px rgba(249,244,158,0.76);
     }
@@ -1106,11 +1118,12 @@ nav .mobile-button i {
 
     /* Start courses */
 
-    .courses .courses-boxes .course-box {
+    #courses .courses-boxes .course-box {
         flex-direction: column;
+        text-align: center;
     }
 
-    .courses .courses-boxes .course-box .description {
+    #courses .courses-boxes .course-box .description {
         position: relative;
         line-height: 1.4;
     }
@@ -1119,22 +1132,22 @@ nav .mobile-button i {
 
     /* Start references */
 
-    .references .references-content {
+    #references .references-content {
         flex-direction: column;
     }
 
-    .references .reference {
+    #references .reference {
         border: none;
         flex-direction: column;
         gap: 10px;
         border-bottom: 2px solid var(--sec-color);
     }
 
-    .references .reference img {
+    #references .reference img {
         width: 200px;
     }
 
-    .references .references-content .hala-image::before {
+    #references .references-content .hala-image::before {
         font-size: 16px;
     }
 
@@ -1145,6 +1158,13 @@ nav .mobile-button i {
     .portfolio-content footer .info {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+    }
+
+    .portfolio-content footer .contact,
+    .portfolio-content footer .links,
+    .portfolio-content footer .socials {
+        align-items: center;
     }
 
     /* End footer */
@@ -1154,11 +1174,11 @@ nav .mobile-button i {
 
 /* Phone to laptop */
 @media (max-width: 1279px) {
-    .languages .languages-container .language::before {
+    #languages .languages-container .language::before {
         display: none;
     }
     
-    .languages .languages-container .language::after {
+    #languages .languages-container .language::after {
         display: none;
     }
 }
