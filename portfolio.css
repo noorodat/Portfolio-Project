@@ -218,57 +218,57 @@ nav .mobile-button i {
 
 /* Start Education */
 
-.portfolio-content .education .education-info {
+.portfolio-content #education .education-info {
     display: flex;
     justify-content: space-between;
     position: relative;
     gap: 30px;
 }
 
-.portfolio-content .education #just-pic {
+.portfolio-content #education #just-pic {
     width: 150px;
 }
 
-.portfolio-content .education .edu-text {
+.portfolio-content #education .edu-text {
     border: 3px solid var(--sec-text-color);
     padding: 20px;
     border-radius: 10px;
     width: 40%;
 }
 
-.portfolio-content .education .edu-text .title {
+.portfolio-content #education .edu-text .title {
     background-color: #133b4b;
     padding: 5px;
     border-radius: 10px;
 }
 
-.portfolio-content .education .edu-text p {
+.portfolio-content #education .edu-text p {
     line-height: 1.5;
     background-color: #1f6d8c36;
     padding: 8px;
     border-radius: 8px;
 }
 
-.portfolio-content .education .edu-text p span {
+.portfolio-content #education .edu-text p span {
     color: var(--sec-text-color);
 }
 
-.portfolio-content .education .edu-text span {
+.portfolio-content #education .edu-text span {
     align-self: center;
 }
 
-.portfolio-content .education .education-info #just-logo {
+.portfolio-content #education .education-info #just-logo {
     width: 100px;
     align-self: center;
 }
 
-.portfolio-content .education .edu-text {
+.portfolio-content #education .edu-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.portfolio-content .education a {
+.portfolio-content #education a {
     color: var(--sec-text-color);
     text-decoration: underline;
 }
@@ -278,13 +278,13 @@ nav .mobile-button i {
 
 /* Start skills */
 
-.skills .skills-types {
+#skills .skills-types {
     display: flex;
     justify-content: space-evenly;
     margin-top: var(--content-margin-top);
 }
 
-.skills .skills-types .skill {
+#skills .skills-types .skill {
     border: 5px solid var(--sec-color);
     border-radius: 20px;
     padding: 50px;
@@ -295,40 +295,40 @@ nav .mobile-button i {
 
 
 
-.skills .skills-types .skill h3 {
+#skills .skills-types .skill h3 {
     text-align: center;
     border-bottom: 2px solid var(--sec-color);
 }
 
-.skills .skills-types .skill span {
+#skills .skills-types .skill span {
     color: var(--sec-text-color);
 }
 
-.skills .skills-types .skills-list {
+#skills .skills-types .skills-list {
     margin-top: 50px;
 }
 
-.skills .skills-types .skills-list img {
+#skills .skills-list img {
     width: 50px;
 }
 
-.skills .skills-types .skills-list {
+#skills  .skills-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.skills .skills-types #tech-skills .skills-list li {
+#skills #tech-skills .skills-list li {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.skills .skills-types .skills-list li {
+#skills .skills-list li {
     position: relative;
 }
 
-.skills .skills-types .skills-list li::before {
+#skills  .skills-list li::before {
     position: absolute;
     content: "";
     width: 18px;
@@ -340,7 +340,7 @@ nav .mobile-button i {
     left: -50px;
 }
 
-.skills .skills-types #tech-skills .skills-list li {
+#skills #tech-skills .skills-list li {
     animation-name: right;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -348,19 +348,19 @@ nav .mobile-button i {
 }
 
 
-.skills .skills-types .skills-list #css {
+#skills .skills-list #css {
     animation-delay: 0.2s;
 }
 
-.skills .skills-types .skills-list #javascript {
+.skills .skills-list #javascript {
     animation-delay: 0.4s;
 }
 
-.skills .skills-types .skills-list #cplusplus {
+.skills .skills-list #cplusplus {
     animation-delay: 0.6s;
 }
 
-.skills .skills-types .skills-list #sql {
+.skills .skills-list #sql {
     animation-delay: 0.8s;
 }
 
@@ -371,7 +371,7 @@ nav .mobile-button i {
 /* Start projects */
 
 
-.projects .projects-cards {
+#projects .projects-cards {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: space-between;
@@ -380,7 +380,7 @@ nav .mobile-button i {
 }
 
 
-.projects .project-card {
+#projects .project-card {
     background-color: var(--sec-color);
     text-align: center;
     transition: var(--transition-duration);
@@ -388,11 +388,11 @@ nav .mobile-button i {
     flex-direction: column;
 }
 
-.projects .project-card .project-info {
+#projects .project-card .project-info {
     padding: 15px;
 }
 
-.projects .project-card .go-link {
+#projects .project-card .go-link {
     padding: 10px 8px;
     background-color: black;
     border-radius: 10px;
@@ -401,29 +401,29 @@ nav .mobile-button i {
     margin-bottom: 10px;
 }
 
-.projects .project-card .go-link:active {
+#projects .project-card .go-link:active {
     box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
 }
 
-.projects .project-card:hover {
+#projects .project-card:hover {
     transform: translateY(-10px);
 }
 
-.projects .project-card p {
+#projects .project-card p {
     margin-top: 10px;
 }
 
-.projects .project-card img {
+#projects .project-card img {
     width: 100%;
     transition: var(--transition-duration);
 }
 
-.projects .project-card .bondi {
+#projects .project-card .bondi {
     background-color: #14376E;
     position: relative;
 }
 
-.projects .project-card .bondi img {
+#projects .project-card .bondi img {
     width: 200px;
     position: absolute;
     top: 50%;
@@ -431,14 +431,14 @@ nav .mobile-button i {
     transform: translate(-50%, -50%);
 }
 
-.projects .project-card .image {
+#projects .project-card .image {
     position: relative;
     padding: 0;
     margin: 0;
     height: 300px;
 }
 
-.projects .project-card .image::before {
+#projects .project-card .image::before {
     content: "";
     position: absolute;
     background-color: rgba(214, 214, 214, 0.144);
@@ -450,11 +450,10 @@ nav .mobile-button i {
     transition: var(--transition-duration);
 }
 
-.projects .project-card:hover .image::before {
+#projects .project-card:hover .image::before {
     width: 100%;
     height: 100%;
 }
-
 
 /* End projects */
 
@@ -462,13 +461,13 @@ nav .mobile-button i {
 
 /* Start languages */
 
-.languages .languages-container {
+#languages .languages-container {
     margin-top: var(--content-margin-top);
     display: flex;
     justify-content: space-evenly;
 }
 
-.languages .languages-container .language {
+#languages .languages-container .language {
     border-radius: 10px;
     padding: 15px;
     border: 5px solid var(--sec-color);
@@ -478,7 +477,7 @@ nav .mobile-button i {
     position: relative;
 }
 
-.languages .languages-container .language::before {
+#languages .languages-container .language::before {
     content: "";
     position: absolute;
     background-color: var(--sec-color);
@@ -488,7 +487,7 @@ nav .mobile-button i {
     left: -36px;
 }
 
-.languages .languages-container .language::after {
+#languages .languages-container .language::after {
     content: "";
     position: absolute;
     background-color: var(--sec-color);
@@ -499,16 +498,16 @@ nav .mobile-button i {
     left: -36px;
 }
 
-.languages .languages-container .language span {
+#languages .languages-container .language span {
     color: var(--sec-text-color);
     border-bottom: 2px solid var(--sec-text-color);
 }
 
-.languages .languages-container .language h2 {
+#languages .languages-container .language h2 {
     padding: 8px;
 }
 
-.languages .languages-container .language li {
+#languages .languages-container .language li {
     padding: 10px;
 }
 
@@ -519,35 +518,35 @@ nav .mobile-button i {
 
 /* Start courses */
 
-.courses .courses-boxes {
+#courses .courses-boxes {
     margin-top: var(--content-margin-top);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.courses .courses-boxes img,
-.courses .courses-boxes .title {
+#courses .courses-boxes img,
+#courses .courses-boxes .title {
     width: 200px;
     text-align: center;
 }
 
-.courses .courses-boxes .title {
+#courses .courses-boxes .title {
     color: var(--sec-text-color);
 }
 
-.courses .courses-boxes .image {
+#courses .courses-boxes .image {
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.courses .courses-boxes .course-box .description {
+#courses .courses-boxes .course-box .description {
     position: relative;
 }
 
-.courses .courses-boxes .course-box .description::before {
+#courses .course-box .description::before {
     content: "";
     position: absolute;
     width: 2px;
@@ -557,7 +556,7 @@ nav .mobile-button i {
     left: -5px;
 }
 
-.courses .courses-boxes .course-box {
+#courses .course-box {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -566,12 +565,12 @@ nav .mobile-button i {
     border-radius: 10px;
 }
 
-.courses .courses-boxes .course-box .image {
+#courses .course-box .image {
     position: relative;
     z-index: 5;
 }
 
-.courses .courses-boxes .course-box .image::before {
+#courses .course-box .image::before {
     content: "2023";
     position: absolute;
     width: 40px;
@@ -585,7 +584,7 @@ nav .mobile-button i {
     writing-mode: vertical-lr;
 }
 
-.courses .courses-boxes .course-box span {
+#courses .course-box span {
     color: var(--sec-text-color);
 }
 
@@ -595,7 +594,7 @@ nav .mobile-button i {
 
 /* Start references */
 
-.references .references-content {
+#references .references-content {
     margin-top: var(--content-margin-top);
     display: flex;
     justify-content: center;
@@ -603,17 +602,17 @@ nav .mobile-button i {
     gap: 40px;
 }
 
-.references .references-content img {
+#references .references-content img {
     width: 250px;
     position: relative;
     z-index: 1;
 }
 
-.references .references-content .hala-image {
+#references .hala-image {
     position: relative;
 }
 
-.references .references-content .hala-image::before {
+#references .hala-image::before {
     position: absolute;
     content: "Lead Trainer at Orange";
     color: var(--main-color);
@@ -630,13 +629,13 @@ nav .mobile-button i {
     align-items: center;
 }
 
-.references .references-content .hala-image:hover::before {
+#references .hala-image:hover::before {
     transform: translateX(-10px);
     z-index: 2;
     opacity: 1;
 }
 
-.references .reference {
+#references .reference {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -644,29 +643,29 @@ nav .mobile-button i {
     border-left: 5px solid var(--sec-color);
 }
 
-.references .reference-info {
+#references .reference-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
 }
 
-.references .reference-info .info {
+#references .reference-info .info {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.references .reference-info i {
+#references .reference-info i {
     font-size: 25px;
 }
 
-.references .reference-info span {
+#references .reference-info span {
     color: var(--sec-text-color);
 }
 
-.references .reference-info a {
+#references .reference-info a {
     color: var(--sec-text-color);
     text-decoration: underline;
 }
@@ -1152,7 +1151,6 @@ nav .mobile-button i {
 }
 
 /* End Phone */
-
 
 /* Phone to laptop */
 @media (max-width: 1279px) {
