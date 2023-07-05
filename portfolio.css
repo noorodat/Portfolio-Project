@@ -1086,6 +1086,7 @@ nav .mobile-button i {
 
     .projects .project-card .image {
         overflow: hidden;
+        height: fit-content;
     }
 
     /* End projects */
