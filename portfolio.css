@@ -982,7 +982,6 @@ nav .mobile-button i {
     /* Start footer */
 
     .portfolio-content footer .info {
-        flex-direction: column;
         gap: 20px;
     }
 
